@@ -1,0 +1,4 @@
+C:\Student\Modules\SharePointHostedAddins\Lab\MyFirstSharePointAddin\MyFirstSharePointAddin\bin\Debug\MyFirstSharePointAddin.pdb
+C:\Student\Modules\SharePointHostedAddins\Lab\MyFirstSharePointAddin\MyFirstSharePointAddin\obj\Debug\MyFirstSharePointAddin.dll
+C:\Student\Modules\SharePointHostedAddins\Lab\MyFirstSharePointAddin\MyFirstSharePointAddin\obj\Debug\MyFirstSharePointAddin.pdb
+C:\Student\Modules\SharePointHostedAddins\Lab\MyFirstSharePointAddin\MyFirstSharePointAddin\obj\Debug\MyFirstSharePointAddin.csprojResolveAssemblyReference.cache

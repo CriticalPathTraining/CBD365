@@ -1,0 +1,6 @@
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\bin\LoanAppraisalWeb.dll.config
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\bin\LoanAppraisalWeb.dll
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\bin\LoanAppraisalWeb.pdb
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\obj\Debug\LoanAppraisalWeb.csprojResolveAssemblyReference.cache
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\obj\Debug\LoanAppraisalWeb.dll
+C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisalWeb\obj\Debug\LoanAppraisalWeb.pdb

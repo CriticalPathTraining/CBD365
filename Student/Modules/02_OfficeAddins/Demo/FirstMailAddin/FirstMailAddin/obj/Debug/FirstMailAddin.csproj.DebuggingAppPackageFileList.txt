@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\FirstMailAddinManifest.xml
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\FirstMailAddin.debugapp

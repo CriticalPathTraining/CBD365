@@ -1,0 +1,12 @@
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\csc.exe
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\vbc.exe
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Student\Modules\OfficeAddins\FirstMailAddin\FirstMailAddin\bin\Debug\roslyn\VBCSCompiler.exe.config

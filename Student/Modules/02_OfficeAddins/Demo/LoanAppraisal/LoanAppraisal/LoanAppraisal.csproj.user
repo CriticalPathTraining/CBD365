@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <GeneratedFeatureId>a65c127a-f882-4852-b9db-fb125779b41c</GeneratedFeatureId>
+    <GeneratedPackageId>4db36acd-b7cb-43cd-89a5-d3db138a2f8e</GeneratedPackageId>
+    <GeneratedModuleId>{6628f6d4-592c-43c8-a007-81e048a2a802}</GeneratedModuleId>
+    <GeneratedListId>{cdefa540-debc-4d52-938b-545dea79a509}</GeneratedListId>
+    <GeneratedProductId>{a282e5b0-6021-4cec-a59c-648c7da4575e}</GeneratedProductId>
+    <GeneratedAppVersion>1.0.0.0</GeneratedAppVersion>
+    <GeneratedClientSecret>bUkdG/02FAazjboy7rbVT38HgL0pqlAbJHjXDp5tOEU=</GeneratedClientSecret>
+    <OfficeAppStartDocument>TestDocument.xlsx</OfficeAppStartDocument>
+  </PropertyGroup>
+</Project>

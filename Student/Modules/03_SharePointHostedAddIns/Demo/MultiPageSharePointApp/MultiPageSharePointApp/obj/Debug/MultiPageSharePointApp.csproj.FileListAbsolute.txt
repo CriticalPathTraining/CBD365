@@ -1,0 +1,3 @@
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\MultiPageSharePointApp\MultiPageSharePointApp\bin\Debug\MultiPageSharePointApp.pdb
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\MultiPageSharePointApp\MultiPageSharePointApp\obj\Debug\MultiPageSharePointApp.dll
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\MultiPageSharePointApp\MultiPageSharePointApp\obj\Debug\MultiPageSharePointApp.pdb

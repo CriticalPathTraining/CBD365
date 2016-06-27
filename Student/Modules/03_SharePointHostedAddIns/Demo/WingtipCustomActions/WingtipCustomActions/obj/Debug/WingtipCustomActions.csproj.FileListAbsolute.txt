@@ -1,0 +1,3 @@
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\WingtipCustomActions\WingtipCustomActions\bin\Debug\WingtipCustomActions.pdb
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\WingtipCustomActions\WingtipCustomActions\obj\Debug\WingtipCustomActions.dll
+C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\WingtipCustomActions\WingtipCustomActions\obj\Debug\WingtipCustomActions.pdb

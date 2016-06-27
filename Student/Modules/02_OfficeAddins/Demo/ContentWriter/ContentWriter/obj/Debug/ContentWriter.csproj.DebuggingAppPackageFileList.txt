@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\ContentWriterManifest.xml
+C:\Student\Modules\OfficeAddins\ContentWriter\ContentWriter\bin\Debug\ContentWriter.debugapp
