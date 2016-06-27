@@ -1,0 +1,6 @@
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\bin\UnifiedApiSpa.dll.config
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\bin\UnifiedApiSpa.dll
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\bin\UnifiedApiSpa.pdb
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\obj\Release\UnifiedApiSpa.csprojResolveAssemblyReference.cache
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\obj\Release\UnifiedApiSpa.dll
+C:\Office365Demos\UnifiedApiSpa\UnifiedApiSpa\obj\Release\UnifiedApiSpa.pdb

@@ -1,0 +1,30 @@
+﻿<h3>View email message</h3>
+
+<table class="table table-striped table-bordered table-condensed table-hover table-responsive">
+  <tbody>
+    <tr>
+      <td style="width: 120px;">From:</td>
+      <td ng-bind="message.From.EmailAddress.Name"></td>
+    </tr>
+    <tr>
+      <td>To:</td>
+      <td>
+        <span ng-repeat="recipient in message.ToRecipients">
+          <span>{{recipient.EmailAddress.Name }}; </span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Subject:</td>
+      <td ng-bind="message.Subject"></td>
+    </tr>
+    <tr>
+      <td>Content Type:</td>
+      <td ng-bind="message.Body.ContentType"></td>
+    </tr>
+    <tr>
+      <td>Body:</td>
+      <td ng-bind-html="messageHTML"></td>
+    </tr>
+  </tbody>
+</table>

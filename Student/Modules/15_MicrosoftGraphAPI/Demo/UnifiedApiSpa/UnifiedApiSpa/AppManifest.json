@@ -1,0 +1,149 @@
+{
+  "appId": "401b8ad7-86e3-4ba3-83a5-93b3f6ad9435",
+  "appRoles": [],
+  "availableToOtherTenants": false,
+  "displayName": "Unified API Demo SPA",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://localhost:44304/",
+  "identifierUris": [
+    "https://CptClassroom2.onMicrosoft.com"
+  ],
+  "keyCredentials": [],
+  "knownClientApplications": [],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access Unified API Demo SPA on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access Unified API Demo SPA",
+      "id": "968a7c3b-c840-43e5-8a20-ef8f5859f282",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access Unified API Demo SPA on your behalf.",
+      "userConsentDisplayName": "Access Unified API Demo SPA",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [],
+  "publicClient": null,
+  "replyUrls": [
+    "https://localhost:44305/",
+    "https://localhost:44304/"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+          "type": "Scope"
+        },
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+          "type": "Scope"
+        },
+        {
+          "id": "fd3373a5-7053-4538-b247-742c38a32d9b",
+          "type": "Scope"
+        },
+        {
+          "id": "205e70e5-aba6-4c52-a976-6d2d46c48043",
+          "type": "Scope"
+        },
+        {
+          "id": "5447fe39-cb82-4c1a-b977-520e67e724eb",
+          "type": "Scope"
+        },
+        {
+          "id": "17dde5bd-8c17-420f-a486-969730c1b827",
+          "type": "Scope"
+        },
+        {
+          "id": "5c28f0bf-8a70-41f1-8ab2-9032436ddb65",
+          "type": "Scope"
+        },
+        {
+          "id": "10465720-29dd-4523-a11a-6a75c743c9d9",
+          "type": "Scope"
+        },
+        {
+          "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+          "type": "Scope"
+        },
+        {
+          "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+          "type": "Scope"
+        },
+        {
+          "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+          "type": "Scope"
+        },
+        {
+          "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+          "type": "Scope"
+        },
+        {
+          "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+          "type": "Scope"
+        },
+        {
+          "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+          "type": "Scope"
+        },
+        {
+          "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+          "type": "Scope"
+        },
+        {
+          "id": "b4e74841-8e56-480b-be8b-910348b18b4c",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [],
+  "objectType": "Application",
+  "objectId": "e8303e65-6aef-41f2-86cb-10416603ac57",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [],
+  "manager": null,
+  "directReports": [],
+  "members": [],
+  "memberOf": [],
+  "owners": [],
+  "ownedObjects": []
+}

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<UnifiedApiWebClient.Models.OfficeMessage>
+
+<h2>Inbox for Current User</h2>
+<h4>Mail Messages</h4>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>From</th>
+      <th>Sent</th>
+      <th>Received</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (UnifiedApiWebClient.Models.OfficeMessage message in Model) {
+      <tr>
+        <td>@message.Subject</td>
+        <td>@message.From.EmailAddress.Name</td>
+        <td>@message.DateTimeCreated</td>
+        <td>@message.DateTimeSent</td>
+        <td><a href="#">Read</a></td>
+        <td><a href="#">Delete</a></td>
+      </tr>
+    }
+  </tbody>
+  </table>

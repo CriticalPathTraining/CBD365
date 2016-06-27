@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <title>Unified API SPA</title>
+  <link href="Content/bootstrap.css" rel="stylesheet" />
+  <link href="Content/App.css" rel="stylesheet" />
+</head>
+
+<body ng-app="UnifiedApiSpa">
+
+  <div class="container">
+    <div class="navbar navbar-default navbar-inverse" role="navigation" ng-controller="navbarController">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">Unified API SPA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#/messages" ng-show="userInfo.isAuthenticated">Messages</a></li>
+            <li><a href="#/calendar" ng-show="userInfo.isAuthenticated">Calendar</a></li>
+            <li><a href="#/files" ng-show="userInfo.isAuthenticated">Files</a></li>
+            <li><a href="#/users" ng-show="userInfo.isAuthenticated">Users</a></li>
+            <li><a href="#/tenancy" ng-show="userInfo.isAuthenticated">Tenancy</a></li>
+            <li><a href="#/userToken" ng-show="userInfo.isAuthenticated">User Token</a></li>
+          </ul>
+          <div id="login" class="pull-right">
+            <a class="btn btn-link" ng-hide="userInfo.isAuthenticated" ng-click="login()">Login</a>
+            <a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a>
+            <span style="color:white;" ng-show="userInfo.isAuthenticated">Hello {{userInfo.profile["name"]}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div id="content-box" ng-view></div>
+  </div>
+
+  <script src="Scripts/jquery-2.1.4.js"></script>
+  <script src="App/jquery-extensions.js"></script>
+  <script src="Scripts/bootstrap.js"></script>
+  <script src="Scripts/angular.js"></script>
+  <script src="Scripts/angular-route.js"></script>
+  <script src="Scripts/adal.js"></script>
+  <script src="Scripts/adal-angular.js"></script>
+
+  <script src="App/App.js"></script>
+
+  <script src="App/services/UnifiedApiService.js"></script>
+
+  <script src="App/controllers/navbarController.js"></script>
+  <script src="App/controllers/homeController.js"></script>
+  <script src="App/controllers/messagesController.js"></script>
+  <script src="App/controllers/calendarController.js"></script>
+  <script src="App/controllers/filesController.js"></script>
+  <script src="App/controllers/usersController.js"></script>
+  <script src="App/controllers/tenancyController.js"></script>
+  <script src="App/controllers/userTokenController.js"></script>
+
+</body>
+
+</html>
+
+
