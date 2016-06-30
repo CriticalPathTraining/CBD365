@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}</ProjectGuid>
+    <ProjectGuid>{97CB5826-5D25-487F-8294-95B0C4298C01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WingtipSearchApp</RootNamespace>
     <AssemblyName>WingtipSearchApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
-    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
     <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{de06433e-ac57-4c43-a569-a8881285334d}</AppFeaturePartId>
-    <WspPartId>{015869dc-75cc-434d-9f78-360597c0f362}</WspPartId>
-    <WorkflowPartId>{c4eccbd8-2093-4a29-acd0-9f2a942f3991}</WorkflowPartId>
-    <CspkgPartId>{f53fbde3-781c-48b4-9335-5af826d23b19}</CspkgPartId>
-    <SqlPackagePartId>{83af2727-63d4-4902-ae13-0d14b3f33b20}</SqlPackagePartId>
+    <AppFeaturePartId>{c68c5657-1328-4898-8745-9a38bf76e9b3}</AppFeaturePartId>
+    <WspPartId>{05e365c8-38ed-45ee-adb4-f2bd01ce133a}</WspPartId>
+    <WorkflowPartId>{11149a31-c0d8-4284-a4c1-b6f22caad35b}</WorkflowPartId>
+    <CspkgPartId>{573a29c8-ad68-407a-a616-adfe28d6fe3e}</CspkgPartId>
+    <SqlPackagePartId>{5e8d8a7a-2732-4500-8c14-3d919ca982ee}</SqlPackagePartId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WingtipSearchAppWeb\WingtipSearchAppWeb.csproj">
-      <Project>{D334B698-7135-485C-926F-9C19D5E6851E}</Project>
+      <Project>{63F26F18-679C-42E0-B2B9-146C20956643}</Project>
       <Name>WingtipSearchAppWeb</Name>
       <Private>True</Private>
       <RoleType>Web</RoleType>

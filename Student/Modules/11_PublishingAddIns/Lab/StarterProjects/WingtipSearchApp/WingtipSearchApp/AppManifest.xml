@@ -2,9 +2,9 @@
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="WingtipSearchApp"
-     ProductID="{921fda40-576c-48cf-b00b-7285d24372a0}"
+     ProductID="{937632ce-08ac-4a94-b5b7-6b6ac31d6133}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>Wingtip Search App</Title>
@@ -14,7 +14,7 @@
   <AppPrincipal>
     <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
-  <AppPermissionRequests>
+  <AppPermissionRequests AllowAppOnlyPolicy="false">
     <AppPermissionRequest Scope="http://sharepoint/search" Right="QueryAsUserIgnoreAppPrincipal" />
   </AppPermissionRequests>
 </App>
