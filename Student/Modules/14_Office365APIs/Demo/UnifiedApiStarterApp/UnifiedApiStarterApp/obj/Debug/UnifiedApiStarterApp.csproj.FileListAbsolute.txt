@@ -116,3 +116,6 @@ C:\Connections\UnifiedApi\UnifiedApiStarterApp\UnifiedApiStarterApp\bin\Debug\zh
 C:\Connections\UnifiedApi\UnifiedApiStarterApp\UnifiedApiStarterApp\obj\Debug\UnifiedApiStarterApp.csprojResolveAssemblyReference.cache
 C:\Connections\UnifiedApi\UnifiedApiStarterApp\UnifiedApiStarterApp\bin\Debug\Newtonsoft.Json.dll
 C:\Connections\UnifiedApi\UnifiedApiStarterApp\UnifiedApiStarterApp\bin\Debug\Newtonsoft.Json.xml
+C:\GIT\CBD365\Student\Modules\14_Office365APIs\Demo\UnifiedApiStarterApp\UnifiedApiStarterApp\bin\Debug\UnifiedApiStarterApp.exe.config
+C:\GIT\CBD365\Student\Modules\14_Office365APIs\Demo\UnifiedApiStarterApp\UnifiedApiStarterApp\obj\Debug\UnifiedApiStarterApp.exe
+C:\GIT\CBD365\Student\Modules\14_Office365APIs\Demo\UnifiedApiStarterApp\UnifiedApiStarterApp\obj\Debug\UnifiedApiStarterApp.pdb
