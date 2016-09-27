@@ -1,2 +1,0 @@
-bin\Debug\OfficeAppManifests\LoanAppraisalManifest.xml
-C:\Student\Modules\OfficeAddins\Demos\LoanAppraisal\LoanAppraisal\bin\Debug\LoanAppraisal.debugapp

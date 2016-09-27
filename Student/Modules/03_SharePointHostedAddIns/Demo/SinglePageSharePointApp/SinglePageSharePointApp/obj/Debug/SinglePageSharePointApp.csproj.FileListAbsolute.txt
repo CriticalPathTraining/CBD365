@@ -1,3 +1,0 @@
-C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\SinglePageSharePointApp\SinglePageSharePointApp\bin\Debug\SinglePageSharePointApp.pdb
-C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\SinglePageSharePointApp\SinglePageSharePointApp\obj\Debug\SinglePageSharePointApp.dll
-C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\SinglePageSharePointApp\SinglePageSharePointApp\obj\Debug\SinglePageSharePointApp.pdb

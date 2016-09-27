@@ -1,7 +1,0 @@
-False
-ddf3ca7d-f6ec-4538-935b-9762eaa5ad34bb4e6fba-5a89-4ab3-9156-375efe8c3f56
-{2dfc7842-5582-4ed4-9057-e87b5b66e321}{a6af2180-9f53-4e28-978e-35330352b8d3}
-{edadbf83-d27f-4dde-bade-e9fe7e9ab741}
-1.0.0.0
-ContentWriter
-_layouts/15/

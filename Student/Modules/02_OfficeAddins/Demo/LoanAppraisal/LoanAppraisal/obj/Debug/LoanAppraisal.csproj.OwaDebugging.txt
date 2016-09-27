@@ -1,7 +1,0 @@
-False
-a65c127a-f882-4852-b9db-fb125779b41c4db36acd-b7cb-43cd-89a5-d3db138a2f8e
-{6628f6d4-592c-43c8-a007-81e048a2a802}{cdefa540-debc-4d52-938b-545dea79a509}
-{a282e5b0-6021-4cec-a59c-648c7da4575e}
-1.0.0.0
-LoanAppraisal
-_layouts/15/

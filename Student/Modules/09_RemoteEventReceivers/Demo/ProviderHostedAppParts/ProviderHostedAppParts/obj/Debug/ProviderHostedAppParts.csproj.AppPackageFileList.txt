@@ -1,1 +1,0 @@
-C:\Office365Demos\ProviderHostedAppParts\ProviderHostedAppParts\bin\Debug\app.publish\1.0.0.0\ProviderHostedAppParts.app
