@@ -1,1 +1,0 @@
-C:\DemosOffice365\WebApiDemo\WebServiceClient_SharePointHostedAddin\bin\Debug\WebServiceClient_SharePointHostedAddin.debugapp

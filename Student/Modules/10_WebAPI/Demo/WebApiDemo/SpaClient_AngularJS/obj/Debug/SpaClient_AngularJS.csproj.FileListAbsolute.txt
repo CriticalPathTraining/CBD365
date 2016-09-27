@@ -1,6 +1,0 @@
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\bin\SpaClient_AngularJS.dll.config
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\bin\SpaClient_AngularJS.dll
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\bin\SpaClient_AngularJS.pdb
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\obj\Debug\SpaClient_AngularJS.csprojResolveAssemblyReference.cache
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\obj\Debug\SpaClient_AngularJS.dll
-C:\DemosOffice365\WebApiDemo\SpaClient_AngularJS\obj\Debug\SpaClient_AngularJS.pdb
