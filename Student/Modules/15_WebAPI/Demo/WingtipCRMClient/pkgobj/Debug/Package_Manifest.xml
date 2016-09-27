@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="eb2dac5c-4bdd-4d74-8946-dc0dd45c559d" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="WingtipCRMClient_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

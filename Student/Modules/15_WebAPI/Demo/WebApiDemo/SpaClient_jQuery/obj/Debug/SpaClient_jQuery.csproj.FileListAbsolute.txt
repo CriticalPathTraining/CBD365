@@ -1,0 +1,6 @@
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\bin\SpaClient_jQuery.dll.config
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\bin\SpaClient_jQuery.dll
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\bin\SpaClient_jQuery.pdb
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\obj\Debug\SpaClient_jQuery.csprojResolveAssemblyReference.cache
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\obj\Debug\SpaClient_jQuery.dll
+C:\DemosOffice365\WebApiDemo\SpaClient_jQuery\obj\Debug\SpaClient_jQuery.pdb

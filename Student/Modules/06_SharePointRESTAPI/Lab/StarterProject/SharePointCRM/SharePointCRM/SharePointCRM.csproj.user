@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>https://cptlabs.sharepoint.com/</SharePointSiteUrl>
+    <OfficeAndSharePointStartAction>Internet Explorer</OfficeAndSharePointStartAction>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2015-09-21T02:52:12.802363Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>25e4a539-753c-4b73-8438-e4396139ecf4</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

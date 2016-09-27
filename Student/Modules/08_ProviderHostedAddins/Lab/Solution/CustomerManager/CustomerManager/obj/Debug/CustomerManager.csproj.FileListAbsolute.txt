@@ -1,0 +1,16 @@
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\csc.exe
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\vbc.exe
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\VBCSCompiler.exe
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\CustomerManager.dll.config
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\bin\Debug\CustomerManager.pdb
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\obj\Debug\CustomerManager.dll
+C:\NewLabs\MVC\Solution\CustomerManager\CustomerManager\obj\Debug\CustomerManager.pdb

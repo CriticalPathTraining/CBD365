@@ -1,0 +1,12 @@
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.dll.config
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.dll
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.pdb
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.csprojResolveAssemblyReference.cache
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.dll
+C:\DemosOffice365\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.pdb
+C:\Extras\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.dll.config
+C:\Extras\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.dll
+C:\Extras\WebApiDemo\WebServiceClient_Angular\bin\WebServiceClient_Angular.pdb
+C:\Extras\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.csprojResolveAssemblyReference.cache
+C:\Extras\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.dll
+C:\Extras\WebApiDemo\WebServiceClient_Angular\obj\Debug\WebServiceClient_Angular.pdb

@@ -1,0 +1,1 @@
+C:\Student\Modules\SharePointHostedAddins\Lab\MyFirstSharePointAddin\MyFirstSharePointAddin\bin\Debug\MyFirstSharePointAddin.debugapp

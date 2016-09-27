@@ -1,0 +1,13 @@
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\MicrosoftGraphNativeClient.exe.config
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\obj\Debug\MicrosoftGraphNativeClient.csprojResolveAssemblyReference.cache
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\MicrosoftGraphNativeClient.exe
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\MicrosoftGraphNativeClient.pdb
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Microsoft.Graph.dll
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Newtonsoft.Json.dll
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\bin\Debug\Newtonsoft.Json.xml
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\obj\Debug\MicrosoftGraphNativeClient.exe
+C:\CBD365\MicrosoftGraphNativeClient\MicrosoftGraphNativeClient\obj\Debug\MicrosoftGraphNativeClient.pdb

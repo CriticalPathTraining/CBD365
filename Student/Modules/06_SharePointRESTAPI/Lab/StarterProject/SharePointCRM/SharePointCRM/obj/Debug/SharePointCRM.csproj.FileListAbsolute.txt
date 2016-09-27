@@ -1,0 +1,3 @@
+C:\Git\GOA365\Student\Modules\SharePointREST\Lab\StarterProject\SharePointCRM\SharePointCRM\bin\Debug\SharePointCRM.pdb
+C:\Git\GOA365\Student\Modules\SharePointREST\Lab\StarterProject\SharePointCRM\SharePointCRM\obj\Debug\SharePointCRM.dll
+C:\Git\GOA365\Student\Modules\SharePointREST\Lab\StarterProject\SharePointCRM\SharePointCRM\obj\Debug\SharePointCRM.pdb
