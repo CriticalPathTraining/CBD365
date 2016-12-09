@@ -1,3 +1,0 @@
-C:\Student\Modules\WebApi\StarterProjects\WingtipCRMClient\bin\Debug\WingtipCRMClient.pdb
-C:\Student\Modules\WebApi\StarterProjects\WingtipCRMClient\obj\Debug\WingtipCRMClient.dll
-C:\Student\Modules\WebApi\StarterProjects\WingtipCRMClient\obj\Debug\WingtipCRMClient.pdb

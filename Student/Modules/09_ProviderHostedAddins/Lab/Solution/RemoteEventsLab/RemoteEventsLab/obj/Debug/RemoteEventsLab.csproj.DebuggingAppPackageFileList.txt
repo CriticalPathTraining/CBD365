@@ -1,1 +1,0 @@
-C:\GIT\GOA365\Modules\RemoteEventReceivers\Lab\Solution\RemoteEventsLab\RemoteEventsLab\bin\Debug\RemoteEventsLab.debugapp

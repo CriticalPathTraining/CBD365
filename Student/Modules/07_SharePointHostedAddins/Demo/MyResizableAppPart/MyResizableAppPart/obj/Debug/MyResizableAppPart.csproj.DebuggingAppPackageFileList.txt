@@ -1,1 +1,0 @@
-C:\GIT\CBD365\Student\Modules\03_SharePointHostedAddIns\Demo\MyResizableAppPart\MyResizableAppPart\bin\Debug\MyResizableAppPart.debugapp

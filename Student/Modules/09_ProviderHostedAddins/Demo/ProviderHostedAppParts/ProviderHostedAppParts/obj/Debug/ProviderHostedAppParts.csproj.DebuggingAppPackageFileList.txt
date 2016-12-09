@@ -1,1 +1,0 @@
-C:\Office365Demos\ProviderHostedAppParts\ProviderHostedAppParts\bin\Debug\ProviderHostedAppParts.debugapp

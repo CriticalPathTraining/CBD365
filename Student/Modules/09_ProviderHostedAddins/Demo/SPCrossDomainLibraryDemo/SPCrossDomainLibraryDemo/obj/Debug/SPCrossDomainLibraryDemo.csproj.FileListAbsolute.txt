@@ -1,9 +1,0 @@
-C:\DemosOffice365\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\bin\Debug\SPCrossDomainLibraryDemo.pdb
-C:\DemosOffice365\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.dll
-C:\DemosOffice365\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.pdb
-C:\Extras\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\bin\Debug\SPCrossDomainLibraryDemo.pdb
-C:\Extras\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.dll
-C:\Extras\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.pdb
-C:\Demos\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\bin\Debug\SPCrossDomainLibraryDemo.pdb
-C:\Demos\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.dll
-C:\Demos\SPCrossDomainLibraryDemo\SPCrossDomainLibraryDemo\obj\Debug\SPCrossDomainLibraryDemo.pdb

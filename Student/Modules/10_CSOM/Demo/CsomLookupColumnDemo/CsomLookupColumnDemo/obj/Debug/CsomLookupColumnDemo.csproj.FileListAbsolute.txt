@@ -1,6 +1,0 @@
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\bin\Debug\CsomLookupColumnDemo.exe.config
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\bin\Debug\CsomLookupColumnDemo.exe
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\bin\Debug\CsomLookupColumnDemo.pdb
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\obj\Debug\CsomLookupColumnDemo.csprojResolveAssemblyReference.cache
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\obj\Debug\CsomLookupColumnDemo.exe
-C:\Demos\CsomLookupColumnDemo\CsomLookupColumnDemo\obj\Debug\CsomLookupColumnDemo.pdb
