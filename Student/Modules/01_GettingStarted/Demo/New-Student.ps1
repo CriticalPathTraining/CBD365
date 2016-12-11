@@ -2,6 +2,9 @@ function New-Student($username, $password, $displayName, $alternateEmail) {
 
     # Get the tenant name (license prefix).
     $tenant = (Get-MsolAccountSku)[0].AccountSkuId.Split(":")[0]
+    $userSPN = $username + "@" + $tenant + ".onMicrosoft.com"
+
+    Write-Host "Creating new Office 365 user account for $userSPN"
 
     # if using E3 licenses
     # $license = $tenant + ":ENTERPRISEPACK"
@@ -11,7 +14,7 @@ function New-Student($username, $password, $displayName, $alternateEmail) {
 
   
     # Create the user
-    New-MsolUser -UserPrincipalName $username `
+    New-MsolUser -UserPrincipalName $userSPN `
                  -DisplayName $displayName `
                  -UsageLocation "US" `
                  -UserType Member `
@@ -24,12 +27,16 @@ function New-Student($username, $password, $displayName, $alternateEmail) {
 
 cls
 
-$cred = Get-Credential
-Connect-MsolService -Credential $cred
 
-#New-Student -username "User123@YOUR_TENANT.onmicrosoft.com" -password  "Password1" -displayName "User 123" -alternateEmail "john.doe@contoso.com"
+$tenantName = "LabsForCBD365"
+$tenantAdminAccountName = "Student"
+$tenantDomain = $tenantName + ".onMicrosoft.com"
+$tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
-New-Student -username "User1@CBD365.onmicrosoft.com" `
-            -password  "pass@word1" `
-            -displayName "User Uno" `
-            -alternateEmail "uu@contoso.com"
+$credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
+Connect-MsolService -Credential $credential
+
+
+# New-Student -username "JamesB" -password  "pass@word1" -displayName "James Bond" -alternateEmail "Agent007@aol.com"
+
+New-Student -username "FrankB" -password  "pass@word1" -displayName "Frank Burns" -alternateEmail "fb007@aol.com"

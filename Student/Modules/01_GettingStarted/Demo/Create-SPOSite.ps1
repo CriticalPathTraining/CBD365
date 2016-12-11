@@ -1,6 +1,6 @@
 cls
 
-$tenantName = "CBD365"
+$tenantName = "LabsForCBD365"
 $tenantAdminAccountName = "Student"
 
 $tenantDomain = $tenantName + ".onMicrosoft.com"
@@ -19,7 +19,7 @@ Connect-SPOService -Url $spoTenantAdminSiteUrl -Credential $credential
 
 Get-SPOSite | Format-Table Url, Template
 
-$newSiteName = "Dev"
+$newSiteName = "DevSite"
 $newSiteUrl = "https://" + $tenantName + ".sharepoint.com/sites/" + $newSiteName
 
 New-SPOSite -Url $newSiteUrl `
