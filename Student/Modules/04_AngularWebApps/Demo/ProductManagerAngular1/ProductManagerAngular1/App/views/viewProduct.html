@@ -1,0 +1,45 @@
+﻿<h3>View Product</h3>
+<hr/>
+<div class="form-horizontal">
+    <fieldset>
+        <div class="form-group">
+            <label for="txtID" class="col-lg-2 control-label">ID:</label>
+            <div class="col-lg-6">
+                <input id="txtID" type="text" readonly class="form-control" ng-model="vm.product.Id">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtName" class="col-lg-2 control-label">Name:</label>
+            <div class="col-lg-6">
+                <input id="txtFirstName" type="text" readonly class="form-control" ng-model="vm.product.Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtCategory" class="col-lg-2 control-label">Category:</label>
+            <div class="col-lg-6">
+                <input id="txtCategory" type="text" readonly class="form-control" ng-model="vm.product.Category">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtListPrice" class="col-lg-2 control-label">List Price:</label>
+            <div class="col-lg-6">
+                <input id="txtListPrice" type="text" readonly class="form-control" ng-model="vm.product.ListPrice">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtDescription" class="col-lg-2 control-label">Description:</label>
+            <div class="col-lg-6">
+                <textarea id="txtDescription" rows="3"  readonly class="form-control" ng-model="vm.product.Description" />
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <div class="col-lg-offset-2  col-lg-4">
+                <a href="/editproduct/{{vm.product.Id}}" class="btn btn-primary" role="button">Edit</a>
+                &nbsp;
+                <a href="/products" class="btn btn-primary" role="button">Cancel</a>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
