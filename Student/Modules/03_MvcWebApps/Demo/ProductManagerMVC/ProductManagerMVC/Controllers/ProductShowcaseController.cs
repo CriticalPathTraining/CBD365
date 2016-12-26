@@ -10,7 +10,7 @@ namespace ProductManagerMVC.Controllers
     public class ProductShowcaseController : Controller
     {
 
-        private IProductDataService productService = ProductDataConnector.GetProductDataService();
+        private IProductDataService productService = ProductDataServiceConnector.GetProductDataService();
 
         public ActionResult Index(string categoryFilter) {
             var products = productService.GetAllProducts();

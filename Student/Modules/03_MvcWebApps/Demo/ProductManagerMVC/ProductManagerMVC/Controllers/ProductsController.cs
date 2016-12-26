@@ -10,7 +10,7 @@ using ProductManagerMVC.Models;
 namespace ProductManagerMVC.Controllers {
     public class ProductsController : Controller {
 
-        private IProductDataService productService = ProductDataConnector.GetProductDataService();
+        private IProductDataService productService = ProductDataServiceConnector.GetProductDataService();
 
         public ActionResult Index() {
             return View(productService.GetAllProducts());

@@ -8,7 +8,7 @@ using ProductManagerMVC.Services;
 namespace ProductManagerMVC.Controllers {
     public class ProductShowcaseNavController : Controller {
 
-        private IProductDataService productService = ProductDataConnector.GetProductDataService();
+        private IProductDataService productService = ProductDataServiceConnector.GetProductDataService();
 
         public ActionResult Menu() {
 

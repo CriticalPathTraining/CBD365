@@ -8,7 +8,7 @@ namespace ProductManagerMVC.Controllers
 {
     public class ProductsAsyncController : Controller
     {
-        private IProductDataServiceAsync productService = ProductDataConnector.GetAsyncProductDataService();
+        private IProductDataServiceAsync productService = ProductDataServiceConnector.GetAsyncProductDataService();
 
         public async Task<ActionResult> Index() {
             return View(await productService.GetAllProductsAsync());
