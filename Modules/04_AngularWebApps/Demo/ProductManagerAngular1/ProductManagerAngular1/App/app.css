@@ -1,0 +1,56 @@
+﻿#products-table {
+    border: 1px solid black;
+}
+
+#products-table thead > tr > th {
+    color: white;
+    background-color: black;
+}
+
+select {
+    padding: 6px 12px;
+    border-radius: 4px;
+
+}
+
+.productPanel {
+    height: 200px;
+}
+
+.panel-body {
+    font-size: 0.9em;
+}
+
+
+.product-image{
+    float: right; 
+    width: 56px;
+}
+
+
+#left-nav {
+    background-color: #DDD;
+    border: 1px solid #444;
+    padding-bottom: 4px;
+}
+
+#left-nav-title{
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+
+#left-nav li > a {
+    padding: 4px;
+    padding-left: 12px;
+}
+
+#left-nav li > a:first-child {
+    padding-top: 12px;
+}
+
+#left-nav li > a:last-child {
+    
+}
+
