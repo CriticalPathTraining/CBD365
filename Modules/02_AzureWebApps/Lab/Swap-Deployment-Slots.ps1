@@ -6,11 +6,16 @@ $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
 $resourceGroupName = "lab02"
 $webAppName = "MyWebApp714"
+$sourceSlotName = "staging"
+$destinationSlotName = "production"
 
 # establish login
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
 Login-AzureRmAccount -Credential $credential | Out-Null
 
-   
-$AppSettings = @{"WelcomeMessage" = "Hello App Settings Modified by a PowerShell Script" }
-Set-AzureRmWebApp -ResourceGroupName $resourceGroupName -Name $webAppName -AppSettings $AppSettings
+Write-Host "Swapping deployment slots..."
+Swap-AzureRmWebAppSlot `
+       -ResourceGroupName $resourceGroupName `
+       -Name $webAppName `
+       -SourceSlotName $sourceSlotName `
+       -DestinationSlotName $destinationSlotName
