@@ -1,6 +1,6 @@
 ﻿cls
-$tenantName = "LabsForCBD365"
-$tenantAdminAccountName = "Student"
+$tenantName = "[YOUR TENANT]"
+$tenantAdminAccountName = "[YOUR USER ACCOUNT]"
 $tenantDomain = $tenantName + ".onMicrosoft.com"
 $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
