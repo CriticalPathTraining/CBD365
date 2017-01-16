@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Manager MVC</title>
+  <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="navbar navbar-default " role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            @Html.ActionLink("Product Manager", "Index", "Home", null, new { @class = "navbar-brand" })
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li> elements with nav links go here -->
+              <li>@Html.ActionLink("Product List","Index","Products")</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container-fluid">
+      @RenderBody()
+    </div>
+  </div>
+
+  @Scripts.Render("~/bundles/jquery")
+  @Scripts.Render("~/bundles/bootstrap")
+  @RenderSection("scripts", required: false)
+
+</body>
+</html>
