@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Manager Angular</title>
+  <title>Product Manager NG</title>
   <link href="/Content/bootstrap.css" rel="stylesheet" />
-  <link href="/App/app.css" rel="stylesheet" />
   <!-- required by Angular routing -->
   <base href="/">
 </head>
 
 <body ng-app="myApp">
 
+  <!-- add top here navbar -->
   <div class="container">
     <div class="navbar navbar-default " role="navigation">
       <div class="container-fluid">
@@ -28,6 +28,7 @@
     </div>
   </div>
 
+  <!-- Add main body content here -->
   <div class="container">
     <div class="container-fluid">
       <div id="content-box" ng-view ></div>
@@ -42,13 +43,7 @@
 
   <!-- Add script links to internal JS files -->
   <script src="App/app.js"></script>
-  <script src="App/services/services.js"></script>
-  <script src="App/filters/filters.js"></script>
   <script src="App/controllers/controllers.js"></script>
-  
-  <!--  You don't need this as all these types are erased -->
-  <script src="App/models/models.js"></script> 
 
-  
 </body>
 </html>

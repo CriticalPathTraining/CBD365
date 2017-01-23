@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{04BFC054-DCD2-47DB-A792-CAD413ADA2DE}</ProjectGuid>
+    <ProjectGuid>{04C40EA0-3911-4175-96B9-BC08E5976B91}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -16,8 +16,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -62,33 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.css" />
-    <Content Include="App\views\productsAdd.html" />
-    <Content Include="App\views\productsEdit.html" />
+    <Content Include="App\views\home.html" />
     <Content Include="App\views\products.html" />
     <Content Include="App\views\productsShowcase.html" />
-    <Content Include="App\views\home.html" />
-    <Content Include="App\views\productsView.html" />
-    <Content Include="Content\ProductImages\WP0001.jpg" />
-    <Content Include="Content\ProductImages\WP0002.jpg" />
-    <Content Include="Content\ProductImages\WP0003.jpg" />
-    <Content Include="Content\ProductImages\WP0004.jpg" />
-    <Content Include="Content\ProductImages\WP0005.jpg" />
-    <Content Include="Content\ProductImages\WP0006.jpg" />
-    <Content Include="Content\ProductImages\WP0007.jpg" />
-    <Content Include="Content\ProductImages\WP0008.jpg" />
-    <Content Include="Content\ProductImages\WP0009.jpg" />
-    <Content Include="Content\ProductImages\WP0010.jpg" />
-    <Content Include="Content\ProductImages\WP0011.jpg" />
-    <Content Include="Content\ProductImages\WP0012.jpg" />
-    <Content Include="Content\ProductImages\WP0013.jpg" />
-    <Content Include="Content\ProductImages\WP0014.jpg" />
-    <Content Include="Content\ProductImages\WP0015.jpg" />
-    <Content Include="Content\ProductImages\WP0016.jpg" />
-    <Content Include="Content\ProductImages\WP0017.jpg" />
-    <Content Include="Content\ProductImages\WP0018.jpg" />
-    <Content Include="Content\ProductImages\WP0019.jpg" />
-    <Content Include="Content\ProductImages\WP0020.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="index.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
@@ -104,7 +82,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -120,17 +97,15 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,9 +116,6 @@
   <ItemGroup>
     <TypeScriptCompile Include="App\app.ts" />
     <TypeScriptCompile Include="App\controllers\controllers.ts" />
-    <TypeScriptCompile Include="App\filters\filters.ts" />
-    <TypeScriptCompile Include="App\models\models.ts" />
-    <TypeScriptCompile Include="App\services\services.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -153,9 +125,6 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -171,9 +140,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54947</DevelopmentServerPort>
+          <DevelopmentServerPort>57576</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54947/</IISUrl>
+          <IISUrl>http://localhost:57576/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

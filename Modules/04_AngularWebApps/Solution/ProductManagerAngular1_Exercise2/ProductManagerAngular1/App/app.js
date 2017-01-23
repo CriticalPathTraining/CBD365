@@ -16,27 +16,13 @@ var myApp;
             controller: "productsController",
             controllerAs: "vm"
         })
-            .when("/products/add", {
-            templateUrl: 'App/views/productsAdd.html',
-            controller: "addProductController",
-            controllerAs: "vm"
-        })
-            .when("/products/view/:id", {
-            templateUrl: 'App/views/productsView.html',
-            controller: "viewProductController",
-            controllerAs: "vm"
-        })
-            .when("/products/edit/:id", {
-            templateUrl: 'App/views/productsEdit.html',
-            controller: "editProductController",
-            controllerAs: "vm"
-        })
             .when("/products/showcase", {
             templateUrl: 'App/views/productsShowcase.html',
             controller: "productShowcaseController",
             controllerAs: "vm"
         })
             .otherwise({ redirectTo: "/" });
+        console.log("Hello3");
     });
 })(myApp || (myApp = {}));
 //# sourceMappingURL=app.js.map
