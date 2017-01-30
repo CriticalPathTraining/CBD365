@@ -11,3 +11,4 @@
 
   angular.module("myApp").filter("listPrice", AppFilters.listPriceFilter);
 }
+

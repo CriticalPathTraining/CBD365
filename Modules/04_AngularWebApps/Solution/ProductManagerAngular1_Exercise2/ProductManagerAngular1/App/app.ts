@@ -1,7 +1,5 @@
-﻿/// <reference path="../scripts/typings/angularjs/angular.d.ts" />
-/// <reference path="../scripts/typings/angularjs/angular-route.d.ts" />
+﻿module myApp {
 
-module myApp {
   var app = angular.module("myApp", ['ngRoute']);
 
   app.config( ($locationProvider: ng.ILocationProvider,
@@ -26,8 +24,6 @@ module myApp {
         controllerAs: "vm"
       })
       .otherwise({ redirectTo: "/" });
-
-    console.log("Hello3");
 
   });
 }

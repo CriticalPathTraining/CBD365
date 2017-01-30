@@ -19,10 +19,12 @@
       <td>{{product.Id}}</td>
       <td>{{product.Name}}</td>
       <td class="hidden-sm hidden-xs">{{product.Category}}</td>
-      <td class="hidden-sm hidden-xs">{{product.ListPrice | currency }}</td>
+      <td class="hidden-sm hidden-xs">{{product.ListPrice | listPrice }}</td>
       <td><a href="/products/view/{{product.Id}}" class="navbar-link">View</a></td>
       <td><a href="/products/edit/{{product.Id}}" class="navbar-link">Edit</a></td>
       <td><a href="" ng-click="vm.deleteProduct(product.Id)" class="navbar-link">Delete</a></td>
     </tr>
   </tbody>
 </table>
+
+

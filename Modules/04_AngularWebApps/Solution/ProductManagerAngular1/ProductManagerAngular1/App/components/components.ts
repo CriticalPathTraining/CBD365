@@ -34,3 +34,4 @@
 
   app.component("productNavigation", new ProductNavigation());
 }    
+

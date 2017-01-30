@@ -19,8 +19,7 @@
     products: Product[];
     productCategories: string[];
     // add constructor
-    constructor(private $location: ng.ILocationService,
-      private ProductDataService: IProductDataService) {
+    constructor(private $location: ng.ILocationService, private ProductDataService: IProductDataService) {
       this.products = ProductDataService.GetAllProducts();
       this.productCategories = ProductDataService.GetProductCategories();
     }
