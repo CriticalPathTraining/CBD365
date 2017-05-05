@@ -1,110 +1,125 @@
 var myApp;
 (function (myApp) {
-    let app = angular.module("myApp");
-    class HomeController {
-        constructor() {
+    var app = angular.module("myApp");
+    var HomeController = (function () {
+        function HomeController() {
             this.welcomeMessage = "Welcome to the Wingtip Product Manager";
             this.topic1Title = "Add a new product";
             this.topic1Copy = "Click the Add Product link on the navbar aboive to add a new product.";
             this.topic2Title = "See the Product Showcase";
             this.topic2Copy = "Click Product Showcase link in the navbar to see the full set of Wingtip products.";
         }
-    }
+        return HomeController;
+    }());
     HomeController.$inject = [];
     app.controller('homeController', HomeController);
-    class ProductsController {
-        constructor($location, ProductDataService) {
+    var ProductsController = (function () {
+        function ProductsController($location, ProductDataService) {
+            var _this = this;
             this.$location = $location;
             this.ProductDataService = ProductDataService;
             ProductDataService.GetAllProductsAsync()
-                .then((result) => {
-                this.products = result;
+                .then(function (result) {
+                _this.products = result;
             });
             ProductDataService.GetProductCategoriesAsync()
-                .then((result) => {
-                this.productCategories = result;
+                .then(function (result) {
+                _this.productCategories = result;
             });
         }
-        deleteProduct(id) {
+        ProductsController.prototype.deleteProduct = function (id) {
+            var _this = this;
             this.ProductDataService.DeleteProductAsync(id)
-                .then(() => {
-                this.$location.path("/products");
+                .then(function () {
+                _this.$location.path("/products");
             });
-        }
-    }
+        };
+        return ProductsController;
+    }());
     ProductsController.$inject = ['$location', 'ProductDataService'];
     app.controller('productsController', ProductsController);
-    class AddProductController {
-        constructor($location, ProductDataService) {
+    var AddProductController = (function () {
+        function AddProductController($location, ProductDataService) {
+            var _this = this;
             this.$location = $location;
             this.ProductDataService = ProductDataService;
             this.product = new myApp.Product();
             ProductDataService.GetProductCategoriesAsync()
-                .then((result) => {
-                this.productCategories = result;
+                .then(function (result) {
+                _this.productCategories = result;
             });
         }
-        addProduct() {
+        AddProductController.prototype.addProduct = function () {
+            var _this = this;
             this.ProductDataService.AddProductAsync(this.product)
-                .then(() => {
-                this.$location.path("/products");
+                .then(function () {
+                _this.$location.path("/products");
             });
-        }
-    }
+        };
+        return AddProductController;
+    }());
     AddProductController.$inject = ['$location', 'ProductDataService'];
     app.controller('addProductController', AddProductController);
-    class ViewProductController {
-        constructor($routeParams, ProductDataService) {
+    var ViewProductController = (function () {
+        function ViewProductController($routeParams, ProductDataService) {
+            var _this = this;
             var id = parseInt($routeParams.id);
             ProductDataService.GetProductAsync(id)
-                .then((result) => {
-                this.product = result;
+                .then(function (result) {
+                _this.product = result;
             });
         }
-    }
+        return ViewProductController;
+    }());
     ViewProductController.$inject = ['$routeParams', 'ProductDataService'];
     app.controller('viewProductController', ViewProductController);
-    class EditProductController {
-        constructor($routeParams, $location, ProductDataService) {
+    var EditProductController = (function () {
+        function EditProductController($routeParams, $location, ProductDataService) {
+            var _this = this;
             this.$routeParams = $routeParams;
             this.$location = $location;
             this.ProductDataService = ProductDataService;
             var id = parseInt($routeParams.id);
             ProductDataService.GetProductAsync(id)
-                .then((result) => {
-                this.product = result;
+                .then(function (result) {
+                _this.product = result;
             });
             ProductDataService.GetProductCategoriesAsync()
-                .then((result) => {
-                this.productCategories = result;
+                .then(function (result) {
+                _this.productCategories = result;
             });
         }
-        updateProduct() {
+        EditProductController.prototype.updateProduct = function () {
+            var _this = this;
             this.ProductDataService.UpdateProductAsync(this.product)
-                .then(() => { this.$location.path("/products"); });
-        }
-    }
+                .then(function () { _this.$location.path("/products"); });
+        };
+        return EditProductController;
+    }());
     EditProductController.$inject = ['$routeParams', '$location', 'ProductDataService'];
     app.controller('editProductController', EditProductController);
-    class ProductShowcaseController {
-        constructor($location, ProductDataService) {
+    var ProductShowcaseController = (function () {
+        function ProductShowcaseController($location, ProductDataService) {
+            var _this = this;
             this.$location = $location;
             this.ProductDataService = ProductDataService;
-            let categoryFilter = $location.search().category;
+            var categoryFilter = $location.search().category;
             if (categoryFilter === undefined) {
                 ProductDataService.GetAllProductsAsync()
-                    .then((result) => {
-                    this.products = result;
+                    .then(function (result) {
+                    _this.products = result;
                 });
             }
             else {
                 ProductDataService.GetProductsByCategoryAsync(categoryFilter)
-                    .then((result) => {
-                    this.products = result;
+                    .then(function (result) {
+                    _this.products = result;
                 });
             }
         }
-    }
+        return ProductShowcaseController;
+    }());
     ProductShowcaseController.$inject = ['$location', 'ProductDataService'];
     app.controller('productShowcaseController', ProductShowcaseController);
 })(myApp || (myApp = {}));
+//# sourceMappingURL=controllers.js.map

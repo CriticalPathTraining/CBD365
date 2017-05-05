@@ -1,26 +1,30 @@
 var myApp;
 (function (myApp) {
-    let app = angular.module("myApp");
-    class ProductNavigationController {
-        constructor(ProductDataService) {
+    var app = angular.module("myApp");
+    var ProductNavigationController = (function () {
+        function ProductNavigationController(ProductDataService) {
             this.ProductDataService = ProductDataService;
             // initialize view model inside $onInit not in constructor
         }
         ;
-        $onInit() {
+        ProductNavigationController.prototype.$onInit = function () {
+            var _this = this;
             this.ProductDataService.GetProductCategoriesAsync()
-                .then((result) => {
-                this.productCategories = result;
+                .then(function (result) {
+                _this.productCategories = result;
             });
-        }
-    }
+        };
+        return ProductNavigationController;
+    }());
     ProductNavigationController.$inject = ['ProductDataService'];
-    class ProductNavigation {
-        constructor() {
+    var ProductNavigation = (function () {
+        function ProductNavigation() {
             this.bindings = {};
             this.controller = ProductNavigationController;
             this.templateUrl = '/App/components/productNavigation.html';
         }
-    }
+        return ProductNavigation;
+    }());
     app.component("productNavigation", new ProductNavigation());
 })(myApp || (myApp = {}));
+//# sourceMappingURL=components.js.map

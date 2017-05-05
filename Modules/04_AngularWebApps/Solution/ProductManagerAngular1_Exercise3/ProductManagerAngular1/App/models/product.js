@@ -1,6 +1,10 @@
 var myApp;
 (function (myApp) {
-    class Product {
-    }
+    var Product = (function () {
+        function Product() {
+        }
+        return Product;
+    }());
     myApp.Product = Product;
 })(myApp || (myApp = {}));
+//# sourceMappingURL=product.js.map

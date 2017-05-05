@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "02b05445-da00-442f-bc3c-ef9bc9e1f9ba",
+  "alias": "GreeterWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "02b05445-da00-442f-bc3c-ef9bc9e1f9ba",
+    "group": { "default": "Critical Path Training" },
+    "title": { "default": "Walmart Greeter Webpart" },
+    "description": { "default": "A simple demo SPFx webpart" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "greeting": "Hello Walmart Shopers!",
+      "largefont": false,
+      "color": "blue"
+    }
+  }]
+}

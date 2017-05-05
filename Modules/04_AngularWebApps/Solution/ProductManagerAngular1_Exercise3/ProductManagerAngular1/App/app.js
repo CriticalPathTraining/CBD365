@@ -1,7 +1,7 @@
 var myApp;
 (function (myApp) {
     var app = angular.module("myApp", ['ngRoute']);
-    app.config(($locationProvider, $routeProvider) => {
+    app.config(function ($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);
         $routeProvider
             .when("/", {
@@ -37,3 +37,4 @@ var myApp;
             .otherwise({ redirectTo: "/" });
     });
 })(myApp || (myApp = {}));
+//# sourceMappingURL=app.js.map

@@ -1,7 +1,7 @@
 var myApp;
 (function (myApp) {
-    class InMemoryProductDataService {
-        constructor(products) {
+    var InMemoryProductDataService = (function () {
+        function InMemoryProductDataService(products) {
             this.products = products;
             this.productListSeedData = [
                 { Id: 1, Name: "Batman Action Figure", ListPrice: 14.95, Category: "Action Figures", Description: "A super hero who sometimes plays the role of a dark knight.", ProductImageUrl: "WP0001.jpg" },
@@ -22,42 +22,44 @@ var myApp;
             ];
             this.products = this.productListSeedData;
         }
-        GetAllProducts() {
+        InMemoryProductDataService.prototype.GetAllProducts = function () {
             return this.products;
-        }
+        };
         ;
-        GetProduct(id) {
-            let products = this.products.filter(product => product.Id === id);
-            let product = products[0];
+        InMemoryProductDataService.prototype.GetProduct = function (id) {
+            var products = this.products.filter(function (product) { return product.Id === id; });
+            var product = products[0];
             return product;
-        }
+        };
         ;
-        AddProduct(product) {
-            let Ids = this.products.map(p => p.Id);
-            let newId = Math.max(...Ids) + 1;
+        InMemoryProductDataService.prototype.AddProduct = function (product) {
+            var Ids = this.products.map(function (p) { return p.Id; });
+            var newId = Math.max.apply(Math, Ids) + 1;
             product.Id = newId;
             this.products.push(product);
-        }
+        };
         ;
-        DeleteProduct(id) {
-            let index = this.products.map(product => product.Id).indexOf(id);
+        InMemoryProductDataService.prototype.DeleteProduct = function (id) {
+            var index = this.products.map(function (product) { return product.Id; }).indexOf(id);
             this.products.splice(index, 1);
-        }
+        };
         ;
-        UpdateProduct(product) {
-            let index = this.products.map(product => product.Id).indexOf(product.Id);
+        InMemoryProductDataService.prototype.UpdateProduct = function (product) {
+            var index = this.products.map(function (product) { return product.Id; }).indexOf(product.Id);
             this.products[index] = product;
-        }
+        };
         ;
-        GetProductCategories() {
+        InMemoryProductDataService.prototype.GetProductCategories = function () {
             return ["Action Figures", "Arts and Crafts", "Remote Control"];
-        }
+        };
         ;
-        GetProductsByCategory(category) {
-            return this.products.filter(product => product.Category === category);
-        }
-    }
+        InMemoryProductDataService.prototype.GetProductsByCategory = function (category) {
+            return this.products.filter(function (product) { return product.Category === category; });
+        };
+        return InMemoryProductDataService;
+    }());
     InMemoryProductDataService.$inject = [];
     myApp.InMemoryProductDataService = InMemoryProductDataService;
     angular.module('myApp').service('ProductDataService', InMemoryProductDataService);
 })(myApp || (myApp = {}));
+//# sourceMappingURL=services.js.map
