@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "walmart-greeter",
+    "framework": "none",
+    "version": "1.0.2",
+    "libraryId": "a8072333-26cf-4df4-aad6-d72401f5cdc8"
+  }
+}

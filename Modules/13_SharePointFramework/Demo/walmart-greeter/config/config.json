@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/greeter/GreeterWebPart.js",
+      "manifest": "./src/webparts/greeter/GreeterWebPart.manifest.json",
+      "outputPath": "./dist/greeter.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "greeterStrings": "webparts/greeter/loc/{locale}.js"
+  }
+}

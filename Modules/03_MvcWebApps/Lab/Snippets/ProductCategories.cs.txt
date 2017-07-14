@@ -1,0 +1,7 @@
+@{
+  SelectListItem[] ProductCategories = {
+    new SelectListItem{ Text="Action Figures", Value="Action Figures" },
+    new SelectListItem{ Text="Arts and Crafts", Value="Arts and Crafts" },
+    new SelectListItem{ Text="Remote Control", Value="Remote Control" }
+  };
+}

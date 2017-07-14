@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+
+@{  Layout = null; }
+
+<nav id="left-nav" class="navbar" role="navigation">
+    <div id="left-nav-title">Filter by Category</div>
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("All Categories", "Index", "ProductShowcase", null, new { @class="nav navbar-link" } )</li>
+        @foreach (var category in Model) {
+            <li>@Html.ActionLink(category, "Index", "ProductShowcase", new { categoryFilter = category }, new { @class = "nav navbar-link" })</li>
+        }
+    </ul>
+</nav>
