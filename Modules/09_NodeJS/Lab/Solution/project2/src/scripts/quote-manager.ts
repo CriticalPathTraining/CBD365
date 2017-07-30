@@ -1,16 +1,9 @@
-class Quote {
-    value: string;
-    author: string;
-    constructor(value: string, author: string){
-        this.value = value;
-        this.author = author;
-    }
-}
+import { Quote } from './quote';
 
-class QuoteManager {
+export class QuoteManager {
 
   private  static quotes: Quote[] = [
-    new Quote("Always borrow money from a pessimist. He won’t expect it back.", "Oscar Wilde" ),
+    new Quote("Always borrow money from a pessimist. He wonâ€™t expect it back.", "Oscar Wilde" ),
     new Quote("Behind every great man is a woman rolling her eyes.", "Jim Carrey" ),
     new Quote("In Hollywood a marriage is a success if it outlasts milk.", "Rita Rudner" ),
     new Quote("Between two evils, I always pick the one I never tried before.", "Mae West" ),
@@ -33,19 +26,3 @@ class QuoteManager {
     }
 
 }
-
-$( () => {
-
-  var displayNewQuote = (): void => {
-    var quote: Quote = QuoteManager.getQuote();
-    $("#quote").text(quote.value);
-    $("#author").text(quote.author);
-  };
-
-  $("#new-quote").click( ()=> {
-    displayNewQuote();
-  });
-
-  displayNewQuote();
-
-});
