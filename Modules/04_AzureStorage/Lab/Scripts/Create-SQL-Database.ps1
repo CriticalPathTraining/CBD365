@@ -10,7 +10,7 @@ Login-AzureRmAccount -Credential $credential | Out-Null
 
 $location = "southcentralus" 
 
-$resourceGroupName = "lab04"
+$resourceGroupName = "sql-databases"
 
 $resourceGroup = Get-AzureRmResourceGroup -Name $resourceGroupName -ErrorAction Ignore
 
@@ -41,13 +41,14 @@ if(!$sqlServer) {
    $sqlServer = New-AzureRmSqlServer `
                     -ResourceGroupName $resourceGroupName `
                     -ServerName $sqlServerName `
-                    -Location $location `
+                    -Location $location `                    
                     -ServerVersion $sqlServerVersion `
                     -SqlAdministratorCredentials $sqlServerAdminCredentials
 
                     
     New-AzureRmSqlServerFirewallRule `
             -FirewallRuleName "AllowAll" `
+            -AllowAllAzureIPs `
             -StartIpAddress 0.0.0.0 `
             -EndIpAddress 255.255.255.255 `
             -ServerName $sqlServerName `
@@ -82,7 +83,7 @@ if(!$sqlDatabase){
 
     $connection = New-Object -TypeName System.Data.SqlClient.SqlConnection($connectionString)
 
-    $queryCreateTables = [IO.File]::ReadAllText($PSScriptRoot + "\CreateTables.sql")
+    $queryCreateTables = [IO.File]::ReadAllText($PSScriptRoot + "\CreateProductsTable.sql")
 
     $command = New-Object -TypeName System.Data.SqlClient.SqlCommand($queryCreateTables, $connection)
     $connection.Open()
@@ -92,3 +93,7 @@ if(!$sqlDatabase){
 
 
 $sqlDatabase | select *
+
+
+
+
