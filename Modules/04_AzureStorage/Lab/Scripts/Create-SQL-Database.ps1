@@ -1,16 +1,20 @@
-cls
-$tenantName = "cpt0814"
-$tenantAdminAccountName = "Student"
+
+$tenantAdminAccountName = "_YOUR_ACCOUNT_NAME_"
+$tenantName = "_YOUR_TENANT_NAME_"
 $tenantDomain = $tenantName + ".onMicrosoft.com"
 $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
+$location = "southcentralus" 
+$resourceGroupName = "sql-databases"
+
+$sqlServerName = "_YOUR_SQL_SERVER_NAME_"
+$sqlServerVersion = "12.0"
+$sqlServerAdminLogin = "CptStudent"
+$sqlServerAdminPassword = "pass@word1234"
+
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
 Login-AzureRmAccount -Credential $credential | Out-Null
-#Add-AzureAccount -Credential $credential
 
-$location = "southcentralus" 
-
-$resourceGroupName = "sql-databases"
 
 $resourceGroup = Get-AzureRmResourceGroup -Name $resourceGroupName -ErrorAction Ignore
 
@@ -20,11 +24,6 @@ if(!$resourceGroup){
   $resourceGroup = New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
 }
 
-$sqlServerName = "cpt0814"
-$sqlServerVersion = "12.0"
-
-$sqlServerAdminLogin = "CptStudent"
-$sqlServerAdminPassword = "pass@word1234"
 $sqlServerSecureAdminPassword = ConvertTo-SecureString –String $sqlServerAdminPassword –AsPlainText -Force
 $sqlServerAdminCredentials = New-Object `
                                 –TypeName System.Management.Automation.PSCredential `
@@ -37,23 +36,27 @@ $sqlServer = Get-AzureRmSqlServer `
 
 if(!$sqlServer) {
    
-   Write-Output "Creating SQL server: $serverName"
+   Write-Output "Creating SQL server: $sqlServerName"
    $sqlServer = New-AzureRmSqlServer `
+                    -SqlAdministratorCredentials $sqlServerAdminCredentials `
                     -ResourceGroupName $resourceGroupName `
                     -ServerName $sqlServerName `
-                    -Location $location `                    
-                    -ServerVersion $sqlServerVersion `
-                    -SqlAdministratorCredentials $sqlServerAdminCredentials
+                    -Location $location `
+                    -ServerVersion $sqlServerVersion                    
 
-                    
+    # open up all inbound traffic                
     New-AzureRmSqlServerFirewallRule `
             -FirewallRuleName "AllowAll" `
-            -AllowAllAzureIPs `
             -StartIpAddress 0.0.0.0 `
             -EndIpAddress 255.255.255.255 `
             -ServerName $sqlServerName `
             -ResourceGroupName $resourceGroupName
 
+    # allow access from other azure services
+    New-AzureRmSqlServerFirewallRule `
+            -ServerName $sqlServerName `
+            -ResourceGroupName $resourceGroupName `
+            -AllowAllAzureIPs
 }
 
 $sqlServer | select ServerName, SqlAdministratorLogin
@@ -93,7 +96,3 @@ if(!$sqlDatabase){
 
 
 $sqlDatabase | select *
-
-
-
-
