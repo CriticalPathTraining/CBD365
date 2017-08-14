@@ -1,0 +1,40 @@
+@model IEnumerable<ProductManagerSQL.Models.Product>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="col-xs-12 col-sm-10">
+  @foreach (var product in Model) {
+    string productImageUrl = "../Content/ProductImages/" + product.ProductImageUrl;
+    <div class="col-lg-4 col-md-5 col-sm-6">
+      <div class="panel panel-primary productPanel">
+        <div class="panel-heading">@product.Name</div>
+        <div class="panel-body">
+          <img src="@productImageUrl" class="product-image" />
+          <p class="text-info">@product.Description</p>
+          <div class="" style="clear: both;">
+            <table class="table">
+              <tr>
+                <td>Category:</td>
+                <td>@product.Category</td>
+              </tr>
+              <tr>
+                <td>List Price:</td>
+                <td>@product.ListPrice.ToString("$0.00")</td>
+              </tr>
+              <tr>
+                <td>Actions:</td>
+                <td>
+                  @Html.ActionLink("Edit", "Edit", new { id = product.Id }) |
+                  @Html.ActionLink("Details", "Details", new { id = product.Id }) |
+                  @Html.ActionLink("Delete", "Delete", new { id = product.Id })
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>      
+      </div>
+    </div>
+  }
+</div>
