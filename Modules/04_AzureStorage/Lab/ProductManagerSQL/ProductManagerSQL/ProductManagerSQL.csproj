@@ -129,26 +129,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\ProductImages\WP0001.jpg" />
-    <Content Include="Content\ProductImages\WP0002.jpg" />
-    <Content Include="Content\ProductImages\WP0003.jpg" />
-    <Content Include="Content\ProductImages\WP0004.jpg" />
-    <Content Include="Content\ProductImages\WP0005.jpg" />
-    <Content Include="Content\ProductImages\WP0006.jpg" />
-    <Content Include="Content\ProductImages\WP0007.jpg" />
-    <Content Include="Content\ProductImages\WP0008.jpg" />
-    <Content Include="Content\ProductImages\WP0009.jpg" />
-    <Content Include="Content\ProductImages\WP0010.jpg" />
-    <Content Include="Content\ProductImages\WP0011.jpg" />
-    <Content Include="Content\ProductImages\WP0012.jpg" />
-    <Content Include="Content\ProductImages\WP0013.jpg" />
-    <Content Include="Content\ProductImages\WP0014.jpg" />
-    <Content Include="Content\ProductImages\WP0015.jpg" />
-    <Content Include="Content\ProductImages\WP0016.jpg" />
-    <Content Include="Content\ProductImages\WP0017.jpg" />
-    <Content Include="Content\ProductImages\WP0018.jpg" />
-    <Content Include="Content\ProductImages\WP0019.jpg" />
-    <Content Include="Content\ProductImages\WP0020.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
