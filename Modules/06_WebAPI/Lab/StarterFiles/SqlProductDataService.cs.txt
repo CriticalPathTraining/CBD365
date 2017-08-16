@@ -1,0 +1,136 @@
+  class SqlProductDataService implements IProductDataServiceAsync {
+
+    static $inject: Array<string> = ['$http', "$q"];
+
+    constructor(private $http: ng.IHttpService, private $q: ng.IQService) { }
+
+    GetAllProductsAsync(): ng.IPromise<Product[]> {
+      var defer = this.$q.defer<Product[]>();
+
+      var restQueryUrl = "/odata/Products/?$select=Id,Name, Category, ListPrice, Description, ProductImageUrl";
+
+      this.$http<Product[]>({
+        method: 'GET',
+        url: restQueryUrl,
+        headers: { "Accept": "application/json" }
+      }).then((result: any) => {
+        var products = result.data.value;
+        defer.resolve(products);
+      });
+
+      return defer.promise;
+    }
+
+    GetProductAsync(id: number): ng.IPromise<Product> {
+      var defer = this.$q.defer<Product>();
+
+      var restQueryUrl = "/odata/Products(" + id + ")/?$select=Id,Name, Category, ListPrice, Description, ProductImageUrl";
+
+      this.$http<Product>({
+        method: 'GET',
+        url: restQueryUrl,
+        headers: { "Accept": "application/json" }
+      }).then((result: any) => {
+        var product: Product = result.data;
+        defer.resolve(product);
+      });
+
+      return defer.promise;
+
+    }
+
+    AddProductAsync(product: Product): ng.IPromise<void> {
+      var defer = this.$q.defer<void>();
+
+      var restQueryUrl = "/odata/Products";
+
+      var requestBody = JSON.stringify({
+        Name: product.Name,
+        Category: product.Category,
+        ListPrice: product.ListPrice,
+        Description: product.Description,
+        ProductImageUrl: product.ProductImageUrl
+      });
+
+      this.$http.post(restQueryUrl, requestBody).then((result: any) => {
+        defer.resolve();
+      });
+
+      return defer.promise;
+
+    }
+
+    DeleteProductAsync(id: number): ng.IPromise<any> {
+      var defer = this.$q.defer<void>();
+
+      var restQueryUrl = "/odata/Products(" + id + ")";
+
+      this.$http.delete(restQueryUrl).then((result: any) => {
+        defer.resolve();
+      });
+
+      return defer.promise;
+
+    }
+
+    UpdateProductAsync(product: Product): ng.IPromise<void> {
+      var defer = this.$q.defer<void>();
+
+      var restQueryUrl = "/odata/Products(" + product.Id + ")";
+
+      var requestBody = JSON.stringify({
+        Name: product.Name,
+        Category: product.Category,
+        ListPrice: product.ListPrice,
+        Description: product.Description,
+        ProductImageUrl: product.ProductImageUrl
+      });
+
+      this.$http.patch(restQueryUrl, requestBody).then(
+        (result: any) => {
+          defer.resolve();
+        }
+      );
+
+      return defer.promise;
+    }
+
+    GetProductCategoriesAsync(): ng.IPromise<string[]> {
+      var defer = this.$q.defer<string[]>();
+
+      var restQueryUrl = "/odata/Products/?$select=Category";
+
+      this.$http<string[]>({
+        method: 'GET',
+        url: restQueryUrl,
+        headers: { "Accept": "application/json" }
+      }).then((result: any) => {
+        var categories = result.data.value.map((category) => { return category.Category; });
+        var uniqueCategories = categories.filter((x, i, a) => a.indexOf(x) == i)
+        console.log(uniqueCategories);
+        defer.resolve(uniqueCategories);
+      });
+
+      return defer.promise;
+
+    }
+
+    GetProductsByCategoryAsync(category: string): ng.IPromise<Product[]> {
+      var defer = this.$q.defer<Product[]>();
+
+      var restQueryUrl = "/odata/Products/?$select=Id,Name, Category, ListPrice, Description, ProductImageUrl" +
+        "&$filter=Category eq '" + category + "'";
+
+      this.$http<Product[]>({
+        method: 'GET',
+        url: restQueryUrl,
+        headers: { "Accept": "application/json" }
+      }).then((result: any) => {
+        var products = result.data.value;
+        defer.resolve(products);
+      });
+
+      return defer.promise;
+    }
+
+  }
