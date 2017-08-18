@@ -46,6 +46,7 @@ namespace AppInstallerDemo {
     static void InstallV1() {
       System.IO.MemoryStream addin1 = new System.IO.MemoryStream(Properties.Resources.CalculatorV1);    
       site.LoadAndInstallApp(addin1);
+      site.
       clientContext.ExecuteQuery();
       Console.WriteLine("Add-in has been installed...");
     }

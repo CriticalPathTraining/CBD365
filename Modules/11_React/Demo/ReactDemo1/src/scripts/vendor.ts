@@ -1,0 +1,1 @@
+import 'react/dist/react';
