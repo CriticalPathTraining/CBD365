@@ -23,8 +23,8 @@ $vmSize = "Basic_A2"
 
 $publisherName = "MicrosoftVisualStudio"
 $offer = "VisualStudio"
-$sku = "VS-2015-Ent-AzureSDK-2.9-WS2012R2"
-$version = "50.0.14"
+$sku = "VS-2017-Comm-Win10-N"
+$version = "2017.08.11"
 
 
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
