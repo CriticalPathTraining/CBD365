@@ -17,7 +17,7 @@
       <label class="control-label col-md-2" for="Name">Category:</label>
       <div class="col-md-10">
         <select class="form-control selectpicker" ng-model="vm.product.Category" required id="Category" name="Category">
-          <option value="" disabled selected>--- select a product category ---</option>
+          <option value="" disabled >--- select a product category ---</option>
           <option ng-repeat="category in vm.productCategories" ng-value="category">{{category}}</option>
         </select>
         <div class="text-danger" ng-show="thisForm.Category.$invalid && (thisForm.Category.$dirty || thisForm.$submitted)">
