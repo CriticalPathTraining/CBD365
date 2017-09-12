@@ -1,4 +1,4 @@
-@model IEnumerable<ProductManagerMVC.Models.Product>
+@model ProductManagerMVC.Models.ProductShowcaseViewModel
 
 <div class="row">
 
