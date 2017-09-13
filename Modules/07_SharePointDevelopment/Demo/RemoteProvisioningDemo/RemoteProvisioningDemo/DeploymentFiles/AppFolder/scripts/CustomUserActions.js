@@ -1,7 +1,5 @@
 ﻿'use strict';
 
-
-Type.registerNamespace("CPT");
 var CPT = window.CPT || {};
 
 CPT.CustomUserActions = function () {

@@ -62,7 +62,7 @@ namespace RemoteProvisioningDemo {
 
     static void Main() {
 
-      InitializeClientContext("https://CptBiLabs.sharepoint.com");
+      InitializeClientContext("https://cpt0828.sharepoint.com/sites/TestSite");
 
       DeleteAllSiteUserActions();
       EnsureAppRootFolder();

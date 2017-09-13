@@ -1,5 +1,5 @@
 ﻿// CSR-override for MDS enabled site
-RegisterModuleInit( _spPageContextInfo.siteServerRelativeUrl + "CPT/scripts/CustomersListCSR.js", RegisterTemplate);
+//RegisterModuleInit( _spPageContextInfo.siteServerRelativeUrl + "CPT/scripts/CustomersListCSR.js", RegisterTemplate);
 
 //CSR-override for MDS disabled site (because we need to call the entry point function in this case whereas it is not needed for anonymous functions)
 RegisterTemplate();

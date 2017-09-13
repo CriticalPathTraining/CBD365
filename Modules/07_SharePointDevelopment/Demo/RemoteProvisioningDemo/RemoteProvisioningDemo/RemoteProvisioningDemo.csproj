@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -136,7 +136,6 @@
     <Content Include="DeploymentFiles\AppFolder\scripts\angular-route.js" />
     <Content Include="DeploymentFiles\AppFolder\scripts\angular.js" />
     <Content Include="DeploymentFiles\AppFolder\scripts\bootstrap.js" />
-    <Content Include="DeploymentFiles\AppFolder\scripts\CustomUserActions - Copy.js" />
     <Content Include="DeploymentFiles\CustomPages\JSOM.aspx" />
     <Content Include="DeploymentFiles\AppFolder\MdsDemoPage.aspx" />
     <Content Include="DeploymentFiles\CustomPages\SPRestApi.aspx" />
@@ -151,7 +150,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
