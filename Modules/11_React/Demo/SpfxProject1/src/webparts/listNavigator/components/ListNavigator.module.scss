@@ -1,0 +1,36 @@
+.listNavigator {
+
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 0;
+  padding: 2px;;
+  background-color: lightyellow;
+
+  h3{
+    margin-top: 1px;
+    margin-bottom: 4px;    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: black;
+    padding: 4px;        
+    color: white;
+    font-size: 18px;    
+  }
+
+  ul {
+    margin: 2px;
+  }
+
+  
+  ul li {
+    list-style-type: square;
+    padding: 2px;
+    
+  }
+
+  ul li a {
+    text-decoration: none;
+      margin-left: 0px;
+      font-size: 14px;      
+  }
+}
