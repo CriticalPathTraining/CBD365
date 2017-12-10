@@ -1,8 +1,8 @@
 cls
 
 # update this script with your user name and password
-$user = "_YOU_@_YOUR_TENANT_.onMicrosoft.com"
-$pwd = "pass@word1"
+$user = "student@pbibc.onMicrosoft.com"
+$pwd = "password1"
 
 $securePassword = ConvertTo-SecureString –String $pwd –AsPlainText -Force
 

@@ -1,9 +1,9 @@
 cls
 
-$tenantName = "LabsForCBD365"
+$tenantName = "pbibc"
 $tenantAdminAccountName = "Student"
-
 $tenantDomain = $tenantName + ".onMicrosoft.com"
+
 Write-Host "Tenant domain: $tenantDomain"
 
 $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
@@ -11,7 +11,6 @@ Write-Host "Tenant Admin SPN: $tenantAdminSPN"
 
 $spoTenantAdminSiteUrl = "https://" + $tenantName + "-admin.sharepoint.com"
 Write-Host "SPO Tenant Admin Site: $spoTenantAdminSiteUrl"
-
 
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
 Connect-SPOService -Url $spoTenantAdminSiteUrl -Credential $credential

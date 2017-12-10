@@ -20,7 +20,7 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('watch', ['browserSync', 'sass'], function() {
+gulp.task('serve', ['browserSync', 'sass'], function() {
   gulp.watch('app/scss/styles.scss', ['sass']);
   gulp.watch('app/index.html', browserSync.reload);
 });
