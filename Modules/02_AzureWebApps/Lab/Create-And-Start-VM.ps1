@@ -1,6 +1,6 @@
 cls
-$tenantName = "[YOUR TENANT]"
-$tenantAdminAccountName = "[YOUR USER ACCOUNT]"
+$tenantName = "pbibc"
+$tenantAdminAccountName = "student"
 $tenantDomain = $tenantName + ".onMicrosoft.com"
 $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
@@ -23,8 +23,8 @@ $vmSize = "Basic_A2"
 
 $publisherName = "MicrosoftVisualStudio"
 $offer = "VisualStudio"
-$sku = "VS-2017-Comm-Win10-N"
-$version = "2017.08.11"
+$sku = "VS-2015-Comm-VSU3-AzureSDK-29-Win10-N"
+$version = "2017.11.16"
 
 
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
