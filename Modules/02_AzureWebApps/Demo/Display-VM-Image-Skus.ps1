@@ -1,6 +1,6 @@
 ﻿cls
-$tenantName = "[YOUR TENANT]"
-$tenantAdminAccountName = "[YOUR USER ACCOUNT]"
+$tenantName = "pbibc"
+$tenantAdminAccountName = "student"
 $tenantDomain = $tenantName + ".onMicrosoft.com"
 $tenantAdminSPN = $tenantAdminAccountName + "@" + $tenantDomain
 
@@ -9,7 +9,7 @@ Login-AzureRmAccount -Credential $credential | Out-Null
 
 $publishers = "MicrosoftWindowsServer", "MicrosoftVisualStudio", "MicrosoftSQLServer", "MicrosoftSharePoint", "MicrosoftRServer"
 
-$location = "southcentralus"
+$location = "eastus2"
 
 "Azure VM Image SKUs" | Out-File "AzureVmImageSkus.txt"
 

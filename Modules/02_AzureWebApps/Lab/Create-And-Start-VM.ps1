@@ -1,4 +1,4 @@
-cls
+ï»¿cls
 $tenantName = "pbibc"
 $tenantAdminAccountName = "student"
 $tenantDomain = $tenantName + ".onMicrosoft.com"
@@ -29,6 +29,8 @@ $version = "2017.11.16"
 
 $credential = Get-Credential -UserName $tenantAdminSPN -Message "Enter password"
 Login-AzureRmAccount -Credential $credential | Out-Null
+
+Set-AzureRmContext -Subscription 9c8547bc-0a61-4cf0-bfd5-b08c7fe353cb
 
 # Create group if it does't exist
 $resourceGroup = Get-AzureRmResourceGroup -Name $resourceGroupName -ErrorAction Ignore
@@ -101,8 +103,8 @@ $networkInterface = New-AzureRmNetworkInterface `
 
 
 # create sign-in credentials for VM
-$vmAdminSecurePassword = ConvertTo-SecureString –String $vmAdminPassword –AsPlainText -Force
-$vmAdminCredentials = New-Object –TypeName System.Management.Automation.PSCredential –ArgumentList $vmAdminLoginName, $vmAdminSecurePassword
+$vmAdminSecurePassword = ConvertTo-SecureString -String $vmAdminPassword -AsPlainText -Force
+$vmAdminCredentials = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $vmAdminLoginName, $vmAdminSecurePassword
 
 Write-Host "Calling New-AzureRmVMConfig to create new VM configuration with name of $vmName ans size of $vmSize"
 $vm = New-AzureRmVMConfig -VMName $vmName -VMSize $vmSize
