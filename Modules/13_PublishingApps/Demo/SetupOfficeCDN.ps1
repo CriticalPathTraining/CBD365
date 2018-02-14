@@ -6,6 +6,6 @@ Connect-SPOService -Url https://pbibc-admin.sharepoint.com -Credential $creds
 #Get-SPOTenantCdnOrigins -CdnType Public
 #Get-SPOTenantCdnPolicies -CdnType Public
 
-Set-SPOTenantCdnEnabled -CdnType Public
+#Set-SPOTenantCdnEnabled -CdnType Public
 
-Get-SPOTenantCdnOrigins -CdnType Public
+#Get-SPOTenantCdnOrigins -CdnType Public
